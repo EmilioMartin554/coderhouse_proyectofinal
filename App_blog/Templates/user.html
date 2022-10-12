@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            Usuario
+        </title>
+    </head>
+    <body>
+        {% if usuario %}
+        {% for user in usuario %}
+        <li>{{user.username}}</li>
+        <li>{{user.email}}</li>
+        {% endfor %} 
+        {% endif %}
+    </body>
+</html>
